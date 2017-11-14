@@ -1,0 +1,56 @@
+<div class="fullscreen-bg">
+  <video loop muted autoplay poster="" class="fullscreen-bg__video">
+      <source src="../../assets/videos/esagif1.webm" type="video/webm">
+  </video>
+</div>
+
+<div class='slogan'>
+  LEAVE YOUR COMPETITION IN THE DUST
+</div>
+
+<div class='btid'>
+    <button mat-raised-button (click)="loginState = !loginState; registerState = false;" class='bt1'>
+      <div class='text1'> LOGIN </div>
+    </button>
+  
+    <div id="animated-example" [ngClass]="{'animated fadeInDown': loginState}"></div>
+    
+    <!-- <div id="animated-example" [ngClass]="{'animated fadeInDown': registerState}"></div> -->
+        <div class="container" *ngIf="registerState" [ngClass]="{'animated fadeInDown': registerState}">
+            <div class="title">
+                Welcome
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input [(ngModel)]="email" id="email" 
+                            type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+ 
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input [(ngModel)]="password" id="password" 
+                            type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+ 
+                <span>{{errorMsg}}</span>
+                <button (click)="login()" 
+                    class="btn waves-effect waves-light" 
+                    type="submit" name="action">Login</button>
+            </div>
+        </div>
+    
+  
+    <button mat-raised-button (click)="registerState = !registerState; loginState = false;" class='bt2'>
+        <span class='text1'> SIGNUP </span>
+    </button>
+  </div>
+
+
+
+
+
