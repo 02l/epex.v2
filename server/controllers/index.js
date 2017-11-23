@@ -1,4 +1,4 @@
-var bcrypt = require('bcryptjs')
+var bcrypt = require('bcrypt')
 
 const userModel = require('../../models/users.model');
 const Sequelize = require('sequelize');
