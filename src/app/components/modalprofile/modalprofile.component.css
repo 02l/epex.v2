@@ -1,0 +1,67 @@
+.filler {
+    background: rgba(21, 21, 21, 0.453);
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.profilecontainer {
+    background: rgba(41, 40, 40, 0.856);
+    border: solid;
+    border-width: 2px;
+    border-radius: 8px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    display: block;
+    height: 21em;
+    width: 48%;
+}
+
+.mugshot {
+    display: inline-block;
+    border-right: solid;
+    width: 25%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+#shrood {
+    width: 8em;
+    height: 10em;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: solid;
+    border-radius: 8px;
+    border-width: 2px;
+}
+
+#socials {
+    /* display: block;
+    margin-left: 10px;
+    margin-top: 20px; */
+}
+
+#twitch {
+    text-decoration: none;
+}
+
+#twitter {
+    /* display: inline; */
+}
+
+.bio {
+    display: inline-block;
+    height:100%;
+    width: 72%;
+}
