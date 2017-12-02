@@ -7,6 +7,7 @@ import { Component, OnInit, ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit {
+  ModalOpen = false;
 
   constructor() { }
 

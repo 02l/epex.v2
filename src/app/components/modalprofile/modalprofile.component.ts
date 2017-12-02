@@ -7,10 +7,16 @@ import { Component, OnInit, ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class ModalprofileComponent implements OnInit {
+  ModalOpen = false;
+
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleModal () {
+    this.ModalOpen = !this.ModalOpen;
   }
 
 }

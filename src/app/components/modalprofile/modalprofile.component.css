@@ -17,7 +17,7 @@
     background: rgba(41, 40, 40, 0.856);
     border: solid;
     border-width: 2px;
-    border-radius: 8px;
+    border-radius: 12px;
 
     margin-left: auto;
     margin-right: auto;
@@ -29,7 +29,10 @@
 
 .mugshot {
     display: inline-block;
-    border-right: solid;
+    border-right: groove;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-color: rgb(85, 85, 85);
     width: 25%;
     height: 100%;
     overflow: hidden; 
@@ -42,14 +45,22 @@
     margin: 0 auto;
     margin-top: 10px;
     border: solid;
-    border-radius: 8px;
+    border-radius: 12px;
     border-width: 2px;
 }
 
-#socials {
-    /* display: block;
-    margin-left: 10px;
-    margin-top: 20px; */
+#username {
+    text-align: center;
+    color: white;
+}
+#ign {
+    text-align: center;
+    color: white;
+}
+
+.socials {
+   margin-top: 14%;
+
 }
 
 #twitch {
@@ -57,7 +68,7 @@
 }
 
 #twitter {
-    /* display: inline; */
+    text-decoration: none;
 }
 
 .bio {
